@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изигиль - Python Разработчик</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #00ffcc;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: #cccccc;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 255, 204, 0.2);
+        }
+
+        .project-card h2 {
+            color: #00ffcc;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #cccccc;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00ffcc;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #00ccaa;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Изигиль Рахметович</h1>
+            <p>Python-разработчик | Создание Telegram-ботов и автоматизация</p>
+        </div>
+
+        <div class="projects">
+            <!-- Проект 1 -->
+            <div class="project-card">
+                <h2>🤖 Бот-философ "Изигиль"</h2>
+                <p>Telegram-бот с подключенной локальной нейросетью. Имеет дерзкий характер, использует мат и отвечает на вопросы как уличный философ. Работает на базе Ollama.</p>
+                <a href="https://t.me/MickeyMrazBot" class="btn">Посмотреть в Telegram</a>
+            </div>
+
+            <!-- Проект 2 -->
+            <div class="project-card">
+                <h2>🛡️ Админ-бот "Цербер"</h2>
+                <p>Бот для модерации чатов. Автоматически удаляет сообщения с матом и спамом. Имеет систему предупреждений (варнов) и выдает мут на 1 час за 3 нарушения.</p>
+                <a href="https://t.me/CHITOS_Admin_bot" class="btn">Посмотреть в Telegram</a>
+            </div>
+
+            <!-- Проект 3 -->
+            <div class="project-card">
+                <h2>🚗 Мод для GTA 4</h2>
+                <p>Собственный пак автомобилей российского производства (Приоры, Жигули, Волги) для GTA 4. Включает настроенную физику (handling.dat) и замену текстур.</p>
+                <a href="#" class="btn">Скоро фото</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Связаться со мной: <a href="https://t.me/TVOE_POLUSLSDKOE" style="color: #00ffcc;">Telegram</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
